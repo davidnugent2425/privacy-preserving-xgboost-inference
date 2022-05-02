@@ -329,3 +329,5 @@ def enc_input_vector(hash_key, ope, feature_set, input_vector, metadata):
                 ope_value = ope.encrypt(int(noramlized_feature))
 
                 input_vector.at[i, feature] = ope_value
+    
+    return input_vector
